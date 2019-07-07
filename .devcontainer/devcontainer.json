@@ -17,6 +17,9 @@
 	// "postCreateCommand": "gcc -v",
 
 	"extensions": [
-		"ms-vscode.cpptools"
+		"ms-vscode.cpptools",
+		"mitaki28.vscode-clang",
+		"austin.code-gnu-global",
+		"jeff-hykin.better-cpp-syntax"
 	]
 }

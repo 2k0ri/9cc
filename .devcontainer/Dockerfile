@@ -3,7 +3,7 @@
 # Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
 #-------------------------------------------------------------------------------------------------------------
 
-FROM debian:9
+FROM ubuntu:19.04
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
@@ -16,7 +16,7 @@ RUN apt-get update \
     && apt-get -y install git procps lsb-release \
     #
     # Install C++ tools
-    && apt-get -y install build-essential cmake cppcheck valgrind \
+    && apt-get -y install build-essential cmake cppcheck valgrind global clang \
     #
     # Clean up
     && apt-get autoremove -y \
